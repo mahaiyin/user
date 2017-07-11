@@ -1,0 +1,30 @@
+<style>
+    .banner, .banner ul, .banner li, .banner ol{
+        margin: 0;
+        padding: 0;
+    }
+    .banner ul, .banner li, .banner ol {
+        list-style: none;
+    }
+</style>
+<link rel="stylesheet" href="/plug/unslider/css.css">
+<script src="/plug/unslider/unslider.min.js"></script>
+<div class="banner">
+    <ul>
+        <li><img src="http://www.bootcss.com/p/unslider/img/sunset.jpg" width="100%"></li>
+        <li><img src="http://www.bootcss.com/p/unslider/img/wood.jpg" width="100%"></li>
+        <li><img src="http://www.bootcss.com/p/unslider/img/subway.jpg" width="100%"></li>
+        <li><img src="http://www.bootcss.com/p/unslider/img/shop.jpg" width="100%"></li>
+    </ul>
+</div>
+<script>
+    $('.banner').unslider({
+        //speed: 500,
+        //delay: 3000,
+        complete: function () {
+        },
+        keys: true,
+        dots: true,
+        fluid: false
+    });
+</script>
