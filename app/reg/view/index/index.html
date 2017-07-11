@@ -1,0 +1,31 @@
+{include file='common@public/head'}
+{include file='common@public/top'}
+<div class="container">
+    <h2>注册</h2>
+    <hr>
+    <form action="{:url('reg')}" class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                注：请认真填写
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="username" class="control-label">用户名:</label>
+                    <input type="text" class="form-control" id="username">
+                </div>
+                <div class="form-group">
+                    <label for="password" class="control-label">密码:</label>
+                    <input type="password" class="form-control" id="password">
+                </div>
+                <div class="form-group">
+                    <label for="repassword" class="control-label">重复密码:</label>
+                    <input type="password" class="form-control" id="repassword">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">确定</button>
+            </div>
+        </div>
+    </form>
+</div>
+{include file='common@public/foot'}
